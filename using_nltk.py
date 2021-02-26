@@ -39,7 +39,7 @@ print(emotion_list)
 w = Counter(emotion_list)
 print(w)
 
-
+#Analyzer
 def sentiment_analyse(sentiment_text):
     score = SentimentIntensityAnalyzer().polarity_scores(sentiment_text)
     if score['neg'] > score['pos']:
